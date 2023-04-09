@@ -7,3 +7,6 @@ resource "docker_network" "private_network" {
     ip_range = var.ipam.ip_range
   }
 }
+output "network_name" {
+  value = docker_network.private_network.name
+}

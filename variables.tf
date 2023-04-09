@@ -13,4 +13,5 @@ variable "container_name" {
   description = ""
   type        = string
   #default     = "alpine"
-}
+  }
+  variable "numberof_instance" {}

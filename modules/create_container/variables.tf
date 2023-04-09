@@ -8,8 +8,8 @@ variable "container_name" {
   type        = string
   #default     = "alpine"
 }
-# variable "numberof_instance" {
-# }
+variable "numberof_instance" {
+}
 # variable "shared_volume" {
 #   description = "name of volume"
 #   default     = "new"
@@ -30,3 +30,4 @@ variable "docker_host" {
   default = "unix:///var/run/docker.sock"
 }
 variable "volume_name" {}
+variable "network_name" {}

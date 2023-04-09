@@ -2,6 +2,6 @@
 resource "docker_image" "image" {
   name = var.image
 }
-output "image_name"{
-  value=docker_image.image.name
+output "image_name" {
+  value = docker_image.image.name
 }

@@ -7,3 +7,5 @@ variable "shared_volume" {
   description = "name of volume"
   default     = "new"
 }
+variable "numberof_instance" {
+}

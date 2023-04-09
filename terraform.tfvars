@@ -1,5 +1,6 @@
-#registry_username = ""
-#registry_password = ""
+registry_username = "masoudn84"
+registry_password = "mn66256pg"
 image             = "hello-world"
-container_name = "new"
+container_name    = "new"
+numberof_instance = 3
 
