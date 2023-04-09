@@ -1,6 +1,5 @@
 # Pulls the image
 resource "docker_image" "ubuntu" {
-  name = var.image_name
-  repo_digest = var.image.digest
+  name        = var.image
 
 }
