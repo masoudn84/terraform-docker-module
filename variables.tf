@@ -9,3 +9,8 @@ variable "image" {
   type        = string
   default     = "alpine"
 }
+variable "container_name" {
+  description = ""
+  type        = string
+  #default     = "alpine"
+}

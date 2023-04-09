@@ -4,12 +4,18 @@ module "create_image" {
   registry_password = var.registry_password
   image= var.image
 }
-module "create_volume" {
+module "create_volumes" {
   source = "./modules/create_volumes"
 }
 module "create_network" {
   source = "./modules/create_network"
 }
+module "create_container" {
+  source = "./modules/create_container"
+  image_name = module.create_image.image_name
+  volume_name = module.create_volumes.volume_name
+  container_name = var.container_name
+ }
 # output "ip" {
 #   value = docker_container.foo.
 # }
