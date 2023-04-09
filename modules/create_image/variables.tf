@@ -12,44 +12,13 @@ variable "registry_address" {
   default     = "hub.docker.com"
 }
 variable "registry_username" {
-  default     = "masoudm84"
   description = "authenticated user in registry"
 }
 variable "registry_password" {
   description = "password for authenticated user in registry"
-  default     = "mn66256pg"
 }
 variable "image" {
   description = ""
   type        = string
-    default        = "alpine"
-
+  #default     = "alpine"
 }
-# variable "" {
-#   description = ""
-#   default = ""
-# }
-# variable "" {
-#   description = ""
-#   default = ""
-# }
-# variable "" {
-#   description = ""
-#   default = ""
-# }
-# variable "" {
-#   description = ""
-#   default = ""
-# }
-# variable "" {
-#   description = ""
-#   default = ""
-# }
-# variable "" {
-#   description = ""
-#   default = ""
-# }
-# variable "" {
-#   description = ""
-#   default = ""
-# }

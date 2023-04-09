@@ -1,9 +1,9 @@
 resource "docker_network" "private_network" {
-  name   = "my_network"
-  driver = "bridge"
+  name   = var.network_name
+  driver = var.driver
   ipam_config {
-    gateway  = "172.20.20.1"
-    subnet   = "172.20.20.0/24"
-    ip_range = "172.20.20.0/24"
+    gateway  = var.ipam.gateway
+    subnet   = var.ipam.subnet
+    ip_range = var.ipam.ip_range
   }
 }
