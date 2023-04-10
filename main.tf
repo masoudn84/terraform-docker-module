@@ -9,7 +9,8 @@ module "create_volumes" {
   numberof_instance = var.numberof_instance
 }
 module "create_network" {
-  source = "./modules/create_network"
+  source   = "./modules/create_network"
+  ipam =var.ipam
 }
 module "create_container" {
   source            = "./modules/create_container"
