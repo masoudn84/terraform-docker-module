@@ -10,7 +10,7 @@ resource "docker_container" "instance" {
   #  }
 
   volumes {
-    volume_name    = var.volume_name[${count.index}]
+    volume_name    = var.volume_name[count.index]
     container_path = "/data"
   }
   # networks_advanced {
